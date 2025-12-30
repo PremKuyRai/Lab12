@@ -2,7 +2,11 @@
 
 using namespace std;
 
+template<typename j>
+ void mySwap(j &,j &);
+
 int main(){
+
 	int x, y;
 	string a, b;
 	char p, q;
@@ -29,4 +33,11 @@ int main(){
 
 	return 0;
 }
-
+template<typename j>
+void mySwap(j &a, j &b){
+	j k;
+	k=a;
+	a=b;
+	b=k;
+}
+ 	
